@@ -1,0 +1,21 @@
+mi_asistente_virtual/
+│
+├── main.py                    # Archivo principal para iniciar la IA
+├── requirements.txt           # Librerías necesarias
+│
+├── voice/
+│   ├── speech_to_text.py      # Convierte voz a texto
+│   └── text_to_speech.py      # Convierte texto a voz
+│
+├── modules/
+│   ├── agenda.py              # Organizador personal (tareas, calendario)
+│   ├── code_helper.py         # Ayuda con programación
+│   ├── inversiones.py         # Lógica básica para inversión
+│   └── analisis_web.py        # Scraping y análisis de sitios si lo necesitas
+│
+├── core/
+│   ├── nlp.py                 # Procesamiento del lenguaje natural
+│   └── control.py             # Control general de flujos e interpretación de comandos
+│
+├── data/
+│   └── agenda.json            # Almacena tareas y eventos
