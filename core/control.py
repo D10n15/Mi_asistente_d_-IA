@@ -10,10 +10,11 @@ Se encarga de interpretar los comandos del usuario y dirigirlos a las funciones 
 import re
 import dateparser
 
+from AsistenteVirtual.modules import inversion, web_monitor
 from core.analisis_etico import realizar_analisis_etico
 from core.nlp import interpretar_comando as nlp_interpretar_comando
 
-from modules import agenda, code_helper, inversiones, analisis_wed, tarea
+from modules import agenda, code_helper, tarea
 from modules.ciberseguridad import defensiva, ofensiva
 from voice.text_to_speech import hablar
 from modules.ciberseguridad import escanear_puertos, detectar_dispositivos_red, fuerza_bruta_simulada
@@ -43,7 +44,7 @@ def ejecutar_comando(texto):
         return code_helper.ayuda_con_codigo()
 
     elif comando == "inversion":
-        return inversiones.sugerencia_inversion()
+        return inversion.sugerencia_inversion()
 
     elif comando == "infiltrar":
         return defensiva.realizar_analisis_etico()
@@ -124,7 +125,7 @@ def interpretar_comando(texto):
 
     # Inversiones
     elif "invertir" in texto or "acción" in texto or "dividendo" in texto:
-        return inversiones.analizar_inversion(texto)
+        return inversion.analizar_inversion(texto)
 
     # Ciberseguridad ofensiva
     elif "escanear puertos" in texto:

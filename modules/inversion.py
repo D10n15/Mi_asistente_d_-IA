@@ -3,6 +3,45 @@
 import random
 from datetime import datetime
 
+# modules/inversion.py
+
+def buscar_inversiones():
+    return (
+        "Algunas opciones populares de inversión incluyen:\n"
+        "- Criptomonedas (Bitcoin, Ethereum)\n"
+        "- Acciones (Tesla, Apple, Amazon)\n"
+        "- Bienes raíces\n"
+        "- ETFs o fondos indexados\n"
+        "- Negocios en línea o activos digitales\n"
+        "¿Te interesa alguno en particular?"
+    )
+
+def activos_pasivos():
+    return (
+        "Un activo es algo que pone dinero en tu bolsillo, como una propiedad en alquiler o una acción que paga dividendos.\n"
+        "Un pasivo es algo que saca dinero de tu bolsillo, como un préstamo o un coche.\n"
+        "El objetivo es adquirir más activos que generen ingresos pasivos."
+    )
+
+def consejos_financieros():
+    return (
+        "Consejos básicos para invertir:\n"
+        "- Nunca inviertas en algo que no entiendas.\n"
+        "- Diversifica tus inversiones.\n"
+        "- Invierte a largo plazo.\n"
+        "- Mantén un fondo de emergencia antes de arriesgar dinero.\n"
+        "- Invierte en tu educación financiera."
+    )
+def tendencias_inversion():
+    return (
+        "Tendencias actuales en inversiones:\n"
+        "- Inversiones sostenibles y responsables.\n"
+        "- Tecnología blockchain y criptomonedas.\n"
+        "- Inteligencia artificial y automatización.\n"
+        "- Energías renovables y sostenibilidad.\n"
+        "- Salud y biotecnología."
+    )
+
 # Recomendaciones de inversión basadas en tendencias actuales
 def sugerencia_inversion():
     inversiones = [
@@ -77,3 +116,4 @@ def main():
             break
         else:
             print("Opción no válida. Intenta nuevamente.")
+            

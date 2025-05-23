@@ -6,8 +6,7 @@ datetime
 beautifulsoup4
 requests
 dateparser
-requests
-beautifulsoup4
+
 
 # Este archivo contiene las dependencias necesarias para el asistente virtual. 
 # Para instalar las dependencias, ejecuta el siguiente comando en la terminal:

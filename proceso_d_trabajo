@@ -1,0 +1,48 @@
+mi_asistente_virtual/
+│
+├── main.py                    # Archivo principal para iniciar la IA
+├── requirements.txt           # Librerías necesarias
+│
+├── voice/
+│   ├── speech_to_text.py      # Convierte voz a texto
+│   └── text_to_speech.py      # Convierte texto a voz
+│
+├── modules/
+│   ├── agenda.py              # Organizador personal (tareas, calendario)
+│   ├── code_helper.py         # Ayuda con programación
+│   ├── inversiones.py         # Lógica básica para inversión
+│   └── analisis_web.py        # Scraping y análisis de sitios si lo necesitas
+│
+├── core/
+│   ├── nlp.py                 # Procesamiento del lenguaje natural
+│   └── control.py             # Control general de flujos e interpretación de comandos
+│
+├── data/
+│   └── agenda.json            # Almacena tareas y eventos
+
+
+#nueva atualizacion
+
+#AsistenteVirtual/
+├── core/                    # Núcleo lógico (controladores, procesamiento)
+│   ├── control.py
+│   ├── nlp.py
+│   └── analisis_etico.py
+├── modules/                 # Módulos funcionales
+│   ├── agenda.py
+│   ├── code_helper.py
+│   ├── inversiones.py
+│   ├── analisis_wed.py
+│   └── ciberseguridad/
+│       ├── defensiva.py
+│       └── ofensiva.py
+├── voice/                   # Módulos de voz
+│   ├── speech_to_text.py
+│   └── text_to_speech.py
+├── data/                    # Archivos de datos JSON
+│   ├── agenda.json
+│   ├── inversiones.json
+│   └── logs.json
+├── main.py                  # Script principal
+├── requirements.txt         # Librerías necesarias
+└── .env                     # Variables de entorno (más adelante)

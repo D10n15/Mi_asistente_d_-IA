@@ -1,5 +1,27 @@
 # modules/code_helper.py
 
+def explicar_codigo(codigo):
+    if "for" in codigo:
+        return "Este código contiene un bucle 'for', que se usa para repetir acciones en una secuencia."
+    elif "def" in codigo:
+        return "Este código define una función. 'def' se usa para declarar funciones en Python."
+    elif "if" in codigo:
+        return "Este código usa una condición 'if'. Se ejecuta solo si la condición es verdadera."
+    else:
+        return "Este código parece simple. ¿Quieres que lo analice con más detalle?"
+def optimizar_codigo(codigo):
+    """
+    Función que optimiza el código proporcionado.
+    Aquí podrías integrar un optimizador de código o un modelo de IA.
+    """
+    # Simulación de optimización de código
+    if "for" in codigo:
+        return "El bucle 'for' se puede optimizar usando comprensión de listas."
+    elif "if" in codigo:
+        return "Considera usar un diccionario para evitar múltiples condiciones 'if'."
+    else:
+        return "No se encontraron oportunidades de optimización."
+
 def ayuda_con_codigo():
     """
     Función base para responder a consultas generales sobre programación.
